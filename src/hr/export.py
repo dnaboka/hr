@@ -11,4 +11,4 @@ def to_csv_file(export_file, users):
     writer.writeheader()
     for user in users:
         writer.writerow({'name':user['name'], 'id':user['id'], 'home':user['home'], 'shell':user['shell']})
-        export_file.close()
+    export_file.close()
